@@ -25,7 +25,7 @@ npm install
 jove build
 
 # no repository yet
-#pwd
-#git commit -am "${cmt}"
-#git push
+pwd
+git commit -am "${cmt}"
+git push
 
