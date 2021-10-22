@@ -1,0 +1,6 @@
+
+#page next
+title='My Test App'
+
+#content
+<simple-label text="@greeting.hello"/>

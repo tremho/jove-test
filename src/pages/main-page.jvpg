@@ -1,0 +1,14 @@
+
+#page main
+title='My Test App'
+no-back
+
+#content
+    <simple-label text="@greeting.hello"/>        
+    <simple-label text="I wish to say @greeting.hello to you"/>        
+    <simple-label bind="greeting.hello as text"/>        
+    <simple-label text="this is @:foobar"/>
+    <simple-label text="Hello, World!"/>
+
+    <simple-button text="Change Values" action="changeValues"/>
+    <simple-button text="Next Page" action="nextPage"/>
