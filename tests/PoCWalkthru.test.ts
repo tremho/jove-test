@@ -1,8 +1,14 @@
+import Tap from 'tap'
+Tap.test('Sanity', t => {
+    t.ok(true, "Tap Sanity is intact")
+    t.end()
+})
 
 const {runRemoteTest, startTest, endTest, callRemote, testRemote} = require("@tremho/jove-test");
 
 
 async function pocTest(t:any) {
+    console.log('>>>>>>>>>>>>> poctest starting <<<<<<<<<<<<')
     await startTest(t)
 
     console.log('doing basic tests')
@@ -39,19 +45,6 @@ async function pocTest(t:any) {
     await endTest(t)
 }
 // Here is how we run a test
+
+console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$ Run Remote Test ---->>>  ")
 runRemoteTest('Proof of concept walk-thru', pocTest)
-
-/*
-Test script syntax ideas
-
-const direct = {
-    title: 'identify change button',
-    cmd: 'assignComponent changer simple-button action changeValues',
-    expect: true
-}
-const script = `
-    Identify Change Button
-        assignComponent(changer, simple-button, action, changeValues)
-        expect true
-`
- */
