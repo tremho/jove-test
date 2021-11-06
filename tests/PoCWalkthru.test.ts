@@ -1,8 +1,3 @@
-import Tap from 'tap'
-Tap.test('Sanity', t => {
-    t.ok(true, "Tap Sanity is intact")
-    t.end()
-})
 
 const {runRemoteTest, startTest, endTest, callRemote, testRemote} = require("@tremho/jove-test");
 
