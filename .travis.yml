@@ -7,9 +7,12 @@ matrix:
       language: node_js
       node_js: "16"
 
+      env:
+        - NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       before_install:
-        - npm config set //registry.npmjs.org/:_authToken=94419464-9593-4e96-86a8-d3f9477242d4
-        - cat ~/.npmrc
+        - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
+        - cat ~/.nvmrc
 #        - sudo easy_install pip
 #        - sudo pip install --upgrade pip
 #        - sudo pip install six
