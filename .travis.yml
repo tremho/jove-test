@@ -8,7 +8,7 @@ matrix:
       node_js: "16"
 
       before_install:
-        - npm config set //registry.npmjs.org/:_authToken=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
+        - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
         - cat ~/.npmrc
 #        - sudo easy_install pip
 #        - sudo pip install --upgrade pip
