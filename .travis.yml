@@ -11,8 +11,8 @@ matrix:
         - NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       before_install:
-        - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
-        - cat ~/.nvmrc
+        - npm config set //registry.npmjs.org/:_authToken=${( secrets.NPM_TOKEN}}
+        - cat ~/.npmrc
 #        - sudo easy_install pip
 #        - sudo pip install --upgrade pip
 #        - sudo pip install six
