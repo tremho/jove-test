@@ -7,15 +7,15 @@ matrix:
       language: node_js
       node_js: "16"
 
+      script:
+        - npm run jove-test
+
       before_install:
         - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
-        - cat ~/.npmrc
 #        - sudo easy_install pip
 #        - sudo pip install --upgrade pip
 #        - sudo pip install six
 #
-        script:
-          - npm run jove-test
 #      install:
 #        - curl https://dl.google.com/android/repository/commandlinetools-mac-7583922_latest.zip -o ~/android-clt-mac.zip
 #        - export ANDROID_HOME=~/.android
