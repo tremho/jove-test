@@ -13,9 +13,9 @@
     "postinstall": "npm run initDesktop && npm run initCli",
     "initDesktop": "cd node_modules/@tremho/jove-desktop && npm install && cd buildPack && npm install",
     "initCli": "cd node_modules/@tremho/jove-cli && npm install",
-    "test" : "echo \"We'll try it for real on the next build\" && exit (0)",
     "test-headless": "sudo xvfb :1337 & export DISPLAY=:1337 && npm run jove-test ",
-    "jove-test": "tsc && tap --reporter spec --no-coverage ./build/tests/*.test.js"
+    "test": "tsc && tap --reporter spec --no-coverage ./build/tests/*.test.js",
+    "jove-test" : "jove test debug exit"
   },
   "dependencies": {
     "@tremho/jove-common": "^0.6.9-pre-release",

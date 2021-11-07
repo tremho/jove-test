@@ -14,6 +14,8 @@ matrix:
 #        - sudo pip install --upgrade pip
 #        - sudo pip install six
 #
+        script:
+          - npm run jove-test
 #      install:
 #        - curl https://dl.google.com/android/repository/commandlinetools-mac-7583922_latest.zip -o ~/android-clt-mac.zip
 #        - export ANDROID_HOME=~/.android
