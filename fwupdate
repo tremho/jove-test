@@ -22,7 +22,7 @@ pub-bump --comment "$cmt" --config pub-bump.json
 
 rm -fr package-lock.json node_modules
 npm install
-jove test appium headless nativescript whatever
+jove test 
 
 # no repository yet
 pwd
