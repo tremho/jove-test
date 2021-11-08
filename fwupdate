@@ -24,7 +24,9 @@ rm -fr package-lock.json node_modules
 npm install
 jove test debug exit
 
-# no repository yet
+# update this directory
+echo ".." >> ./README.md
+echo "${cmt}" >> ./README.md
 pwd
 git commit -am "${cmt}"
 git push
