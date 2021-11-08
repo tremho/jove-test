@@ -15,7 +15,7 @@
     "initCli": "cd node_modules/@tremho/jove-cli && npm install",
     "test-headless": "sudo xvfb :1337 & export DISPLAY=:1337 && echo Testing.... && jove test exit",
     "test": "tsc && tap --reporter spec --no-coverage ./build/tests/*.test.js",
-    "jove-test": "npm install && npm run postinstall && npm run test-headless"
+    "jove-test": "npm install && npm run postinstall && jove build && echo \"contents of build folder\" && ls build && echo \"Running test now\" && npm run test-headless"
   },
   "dependencies": {
     "@riotjs/webpack-loader": "^5.0.0",
