@@ -13,7 +13,7 @@
     "postinstall": "npm run initDesktop && npm run initCli",
     "initDesktop": "cd node_modules/@tremho/jove-desktop && npm install && cd buildPack && npm install",
     "initCli": "cd node_modules/@tremho/jove-cli && npm install",
-    "test-headless": "sudo xvfb :1337 & export DISPLAY=:1337 && npm run jove-test ",
+    "test-headless": "sudo xvfb :1337 & export DISPLAY=:1337 && jove test exit",
     "test": "tsc && tap --reporter spec --no-coverage ./build/tests/*.test.js",
     "jove-test": "npm install && npm run postinstall && npm run test-headless"
   },
