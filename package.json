@@ -15,9 +15,10 @@
     "initCli": "cd node_modules/@tremho/jove-cli && npm install",
     "test-headless": "sudo xvfb :1337 & export DISPLAY=:1337 && npm run jove-test ",
     "test": "tsc && tap --reporter spec --no-coverage ./build/tests/*.test.js",
-    "jove-test" : "npm install && npm run postinstall && jove build; find . -name webpack-loader"
+    "jove-test": "npm install && npm run postinstall && jove build; find . -name webpack-loader"
   },
   "dependencies": {
+    "@riotjs/webpack-loader": "^5.0.0",
     "@tremho/jove-common": "^0.6.9-pre-release",
     "@tremho/jove-desktop": "^0.6.9-pre-release",
     "css-element-queries": "^1.2.3",
