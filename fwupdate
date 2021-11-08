@@ -22,7 +22,6 @@ pub-bump --comment "$cmt" --config pub-bump.json
 
 rm -fr package-lock.json node_modules
 npm install
-jove test debug exit
 
 # update this directory
 echo ".." >> ./README.md
@@ -31,3 +30,4 @@ pwd
 git commit -am "${cmt}"
 git push
 
+npm run jove-test
