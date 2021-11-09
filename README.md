@@ -25,3 +25,5 @@ delay test under nativescript
 write ~dotest file at ns project
 ..
 fixups around connect and close
+..
+fixups around connect and close 2
