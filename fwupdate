@@ -30,4 +30,3 @@ pwd
 git commit -am "${cmt}"
 git push
 
-npm run jove-test

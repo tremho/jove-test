@@ -13,3 +13,5 @@ Edit to buildPack didn't trigger a new publish... trying again
 pick up any stragglers
 ..
 add nativescript test launch
+..
+start nativescript for test
