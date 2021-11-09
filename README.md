@@ -31,3 +31,5 @@ fixups around connect and close 2
 fixups around connect and close 3
 ..
 attempt to launch ns in background
+..
+more timing experiments
