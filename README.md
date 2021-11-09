@@ -23,3 +23,5 @@ WS for mobile added
 delay test under nativescript
 ..
 write ~dotest file at ns project
+..
+fixups around connect and close
