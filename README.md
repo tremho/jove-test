@@ -21,3 +21,5 @@ add consolepass
 WS for mobile added
 ..
 delay test under nativescript
+..
+write ~dotest file at ns project
