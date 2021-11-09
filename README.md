@@ -27,3 +27,5 @@ write ~dotest file at ns project
 fixups around connect and close
 ..
 fixups around connect and close 2
+..
+fixups around connect and close 3
