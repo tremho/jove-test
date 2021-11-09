@@ -37,3 +37,5 @@ more timing experiments
 more timing experiments
 ..
 more timing experiments
+..
+error handling update
