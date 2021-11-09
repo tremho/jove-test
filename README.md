@@ -17,3 +17,5 @@ add nativescript test launch
 start nativescript for test
 ..
 add consolepass
+..
+WS for mobile added
