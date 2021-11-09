@@ -19,3 +19,5 @@ start nativescript for test
 add consolepass
 ..
 WS for mobile added
+..
+delay test under nativescript
