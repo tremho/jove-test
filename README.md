@@ -75,3 +75,5 @@ build first strategy 6 - w/delay 10 sec
 finishing touches after success
 ..
 attempt to connect TestActions
+..
+TestActions tracing
