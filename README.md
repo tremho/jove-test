@@ -59,3 +59,5 @@ mo trace mo betta
 institute a retry
 ..
 more questions on WTF
+..
+build first strategy
