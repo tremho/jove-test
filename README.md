@@ -97,3 +97,5 @@ missing injection property still WTF hard to proof
 Stubborn to track down, this disconnect
 ..
 try alternative to timeout handling
+..
+more wait debugging
