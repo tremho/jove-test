@@ -67,3 +67,5 @@ build first strategy 2
 build first strategy 3
 ..
 build first strategy 4 - manual
+..
+build first strategy 5 - manual w/delay
