@@ -111,3 +111,5 @@ type coercion
 end changes
 ..
 end changes 2
+..
+RunRemoteTest update
