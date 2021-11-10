@@ -101,3 +101,5 @@ try alternative to timeout handling
 more wait debugging
 ..
 more wait debugging
+..
+undefined strict
