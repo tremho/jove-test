@@ -103,3 +103,5 @@ more wait debugging
 more wait debugging
 ..
 undefined strict
+..
+remove posssibly problematic process.exit
