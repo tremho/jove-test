@@ -53,3 +53,5 @@ some manual testing is in order
 still looking for Mr. Goodbar
 ..
 mo trace
+..
+mo trace mo betta
