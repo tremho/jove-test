@@ -107,3 +107,5 @@ undefined strict
 remove posssibly problematic process.exit
 ..
 type coercion
+..
+end changes
