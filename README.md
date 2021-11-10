@@ -65,3 +65,5 @@ build first strategy
 build first strategy 2
 ..
 build first strategy 3
+..
+build first strategy 4 - manual
