@@ -1,5 +1,7 @@
 // import Tap from "tap";
 
+console.log('SHOULDNT WE SEE THESE LOGS?')
+
 const {runRemoteTest, startTest, endTest, callRemote, testRemote} = require("@tremho/jove-test");
 
 
