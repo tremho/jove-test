@@ -1,0 +1,21 @@
+#! /bin/zsh
+
+rootdir=`pwd`
+cmd=$1
+
+REPOS=('./'
+'../thunderbolt-cli'
+'../thunderbolt-common'
+'../thunderbolt-desktop'
+'../thunderbolt-mobile'
+'../thunderbolt-test'
+)
+
+for repo in "${REPOS[@]}"
+do
+  echo "doing git $cmd at $repo"
+  cd $repo
+  git $cmd $2 $3 $4 $5
+  cd $rootdir
+done
+

@@ -1,0 +1,23 @@
+#! /bin/zsh
+
+cwd=`pwd`
+cd ../thunderbolt-desktop
+echo "desktop" > $cwd/maindiff.txt
+git diff main >> $cwd/maindiff.txt
+cd ../thunderbolt-common
+echo "" >> $cwd/maindiff.txt
+echo "common" >> $cwd/maindiff.txt
+git diff main >> $cwd/maindiff.txt
+cd ../thunderbolt-cli
+echo "" >> $cwd/maindiff.txt
+echo "cli" >> $cwd/maindiff.txt
+git diff main >> $cwd/maindiff.txt
+cd ../thunderbolt-mobile
+echo "" >> $cwd/maindiff.txt
+echo "mobile" >> $cwd/maindiff.txt
+git diff master >> $cwd/maindiff.txt
+cd ../thunderbolt-test
+echo "" >> $cwd/maindiff.txt
+echo "test" >> $cwd/maindiff.txt
+git diff main >> $cwd/maindiff.txt
+cd $cwd
