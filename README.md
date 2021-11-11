@@ -97,3 +97,5 @@ do a promise resolve for test runner
 do a promise resolve for test runner 2
 ..
 undo test runner promise changes
+..
+sanity compare of mockrunner
