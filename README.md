@@ -93,3 +93,5 @@ more pickup
 more pickup for CTR
 ..
 do a promise resolve for test runner
+..
+do a promise resolve for test runner 2
