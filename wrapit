@@ -1,0 +1,48 @@
+#! /bin/zsh
+
+rootdir=`pwd`
+cmd=$1
+
+REPOS=('./'
+'../thunderbolt-cli'
+'../thunderbolt-common'
+'../thunderbolt-desktop'
+'../thunderbolt-mobile'
+'../thunderbolt-test'
+)
+
+function mainDiff {
+  git checkout develop
+  git diff main ${1}
+}
+function diffBack {
+  git checkout develop
+  cm=`git log | grep commit | head -3 | tail -1`
+  hsh=${cm:7}
+  echo "difference from commit ${hsh}"
+    git diff ${hsh} ${2}
+}
+
+function accept {
+  git checkout main
+  git merge -s recursive -Xtheirs develop
+  git push
+  git checkout develop
+}
+
+for repo in "${REPOS[@]}"
+do
+  cd $repo
+  echo
+  echo "--------------- $repo -----------------"
+  if [ "$cmd" = "diff" ]; then
+    if [ "$2" = "main" ]; then
+      mainDiff $3
+    else
+      diffBack $2 $3
+    fi
+  elif [ "$cmd" = "accept" ]; then
+      echo "merge develop into main, w/theirs"
+  fi
+
+done
