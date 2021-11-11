@@ -79,3 +79,5 @@ restoration attempt
 type coercion replacement
 ..
 updated publish versions on all restoration packages
+..
+Rebuild with updated jove-mobile
