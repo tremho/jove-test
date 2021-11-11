@@ -6,8 +6,6 @@ const {runRemoteTest, startTest, endTest, callRemote, testRemote} = require("@tr
 
 async function pocTest(t:any) {
     console.log('>>>>>>>>>>>>> poctest starting <<<<<<<<<<<<')
-    t.ok(true, 'Life is strange')
-    return t.end()
 
     await startTest(t)
 
@@ -18,7 +16,6 @@ async function pocTest(t:any) {
     await testRemote(t, 'divide 714 17', 'division test', 42)
     await testRemote(t, 'greet Steve', 'text return test', 'hello, Steve')
     await testRemote(t, 'fetch', 'async return test', 'Okay, here I am')
-
 
     let navInfo = await callRemote('readModelValue page.navInfo')
     t.ok(typeof navInfo === 'object', 'navInfo is an object (got '+typeof navInfo+') '+navInfo)
@@ -44,8 +41,7 @@ async function pocTest(t:any) {
     t.ok(navInfo.pageId === 'next', 'Page is next (got '+navInfo.pageId+')')
     t.ok(navInfo.timestamp > firstTimestamp && navInfo.timestamp < Date.now(), 'Timestamp is valid (got '+navInfo.timestamp+')')
 
-    t.end()
-    // await endTest(t)
+    await endTest(t)
 }
 // Here is how we run a test
 
