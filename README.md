@@ -113,3 +113,5 @@ end changes
 end changes 2
 ..
 RunRemoteTest update
+..
+RunRemoteTest revert

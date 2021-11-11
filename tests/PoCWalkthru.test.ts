@@ -1,4 +1,4 @@
-import Tap from "tap";
+// import Tap from "tap";
 
 const {runRemoteTest, startTest, endTest, callRemote, testRemote} = require("@tremho/jove-test");
 
@@ -65,5 +65,11 @@ async function pocTest(t:any) {
 }
 // Here is how we run a test
 
-console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$ Run Remote Test ---->>>  ")
+// console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$ Run Remote Test ---->>>  ")
 runRemoteTest('Proof of concept walk-thru', pocTest)
+// function start() {
+//     Tap.test('PoC Sanity', t => {
+//         return pocTest(t)
+//     })
+// }
+// start()
