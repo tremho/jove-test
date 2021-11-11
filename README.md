@@ -77,3 +77,5 @@ finishing touches after success
 restoration attempt
 ..
 type coercion replacement
+..
+updated publish versions on all restoration packages
