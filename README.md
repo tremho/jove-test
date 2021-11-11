@@ -91,3 +91,5 @@ exploratory traces 3
 more pickup
 ..
 more pickup for CTR
+..
+do a promise resolve for test runner
