@@ -65,7 +65,7 @@ async function pocTest(t:any) {
 }
 // Here is how we run a test
 
-// console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$ Run Remote Test ---->>>  ")
+console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$ Run Remote Test ---->>>  ")
 runRemoteTest('Proof of concept walk-thru', pocTest)
 // function start() {
 //     Tap.test('PoC Sanity', t => {
