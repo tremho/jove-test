@@ -61,9 +61,9 @@ async function pocTest(t:any) {
     // await testRemote(t, 'wait 1000', 'wait 1 second IX')
     // await testRemote(t, 'wait 1000', 'wait 1 second X')
 
-    // endTest(t)
-    t.ok(true, 'Life is good')
-    t.end()
+    await endTest(t)
+    // t.ok(true, 'Life is good')
+    // t.end()
 }
 // Here is how we run a test
 
