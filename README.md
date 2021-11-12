@@ -151,3 +151,5 @@ wait, what?
 fix wait
 ..
 appium prompts in place
+..
+appium first attempt
