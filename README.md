@@ -173,3 +173,5 @@ appium the fault is not in the stars, dear Brutus. launch verbose II
 change 'target' to 'device' and derive appium parameters from ns device info for named device
 ..
 trace and error report finding device name
+..
+fix dumb mistake
