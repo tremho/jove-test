@@ -145,3 +145,5 @@ it did work before, right?
 victory lap build
 ..
 add nativescript exit
+..
+wait, what?
