@@ -167,3 +167,5 @@ appium w/ server launch+delay (verbose)
 appium w/ server launch+delay (verbose)
 ..
 appium back to external launching
+..
+appium the fault is not in the stars, dear Brutus. launch verbose II
