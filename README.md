@@ -147,3 +147,5 @@ victory lap build
 add nativescript exit
 ..
 wait, what?
+..
+fix wait
