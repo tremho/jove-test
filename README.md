@@ -181,3 +181,5 @@ sanity tracing
 Reduced verbosity
 ..
 === !== =
+..
+correct path to ios app
