@@ -159,3 +159,5 @@ appium trace
 appium run server externally
 ..
 appium include webdriverio
+..
+appium w/ server launch (verbose)
