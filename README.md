@@ -175,3 +175,5 @@ change 'target' to 'device' and derive appium parameters from ns device info for
 trace and error report finding device name
 ..
 fix dumb mistake
+..
+sanity tracing
