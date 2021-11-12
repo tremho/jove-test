@@ -153,3 +153,5 @@ fix wait
 appium prompts in place
 ..
 appium first attempt
+..
+appium trace
