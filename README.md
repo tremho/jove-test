@@ -157,3 +157,5 @@ appium first attempt
 appium trace
 ..
 appium run server externally
+..
+appium include webdriverio
