@@ -177,3 +177,5 @@ trace and error report finding device name
 fix dumb mistake
 ..
 sanity tracing
+..
+Reduced verbosity
