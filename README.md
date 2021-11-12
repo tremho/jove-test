@@ -163,3 +163,5 @@ appium include webdriverio
 appium w/ server launch (verbose)
 ..
 appium w/ server launch+delay (verbose)
+..
+appium w/ server launch+delay (verbose)
