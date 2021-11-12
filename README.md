@@ -155,3 +155,5 @@ appium prompts in place
 appium first attempt
 ..
 appium trace
+..
+appium run server externally
