@@ -149,3 +149,5 @@ add nativescript exit
 wait, what?
 ..
 fix wait
+..
+appium prompts in place

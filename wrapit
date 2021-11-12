@@ -25,7 +25,7 @@ function diffBack {
 
 function accept {
   git checkout main
-  git merge -s recursive -Xtheirs develop
+  git merge -s recursive -Xtheirs develop -m"$1"
   git push
   git checkout develop
 }
@@ -42,7 +42,7 @@ do
       diffBack $2 $3
     fi
   elif [ "$cmd" = "accept" ]; then
-      echo "merge develop into main, w/theirs"
+      accept $2
   fi
 
 done
