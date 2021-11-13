@@ -183,3 +183,5 @@ Reduced verbosity
 === !== =
 ..
 correct path to ios app
+..
+update promise resolution behavior on doBuild and doNativescript
