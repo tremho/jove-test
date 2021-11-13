@@ -205,3 +205,5 @@ More console log cleanup
 Console log should be clean
 ..
 Persistent non-update of common
+..
+Logs cleaned from mobile
