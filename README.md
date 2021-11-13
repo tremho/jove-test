@@ -207,3 +207,5 @@ Console log should be clean
 Persistent non-update of common
 ..
 Logs cleaned from mobile
+..
+Mobile time is relative
