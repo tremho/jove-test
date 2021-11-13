@@ -11,7 +11,7 @@
         let start = Date.now()
         await testRemote(t, 'add 2 3', 'addition test --- ', 5)
         let end = Date.now()
-        let r = (start-end)
+        let r = -(start-end)
         let x = r >= -500 && r <= 500
         t.ok(x, `difference is ${r}`)
         console.log("nominal response is", r, x)
@@ -21,7 +21,7 @@
         start = Date.now()
         await testRemote(t, 'wait 1000', 'Wait 1 second')
         end = Date.now()
-        r = (start+1000-end)
+        r = -(start+1000-end)
         x = r >= -500 && r <= 500
         t.ok(x, `difference is ${r}`)
         console.log("difference", r, x)
@@ -30,7 +30,7 @@
         start = Date.now()
         await testRemote(t, 'wait 5000', 'Wait 5 seconds')
         end = Date.now()
-        r = (start+5000-end)
+        r = -(start+5000-end)
         x = r >= -500 && r <= 500
         t.ok(x, `difference is ${r}`)
         console.log("difference", r, x)
@@ -39,7 +39,7 @@
         start = Date.now()
         await testRemote(t, 'wait 100', 'Wait 100 ms')
         end = Date.now()
-        r = (start+100-end)
+        r = -(start+100-end)
         x = r >= -50 && r <= 50
         t.ok(x, `difference is ${r}`)
         console.log("difference", r, x)
