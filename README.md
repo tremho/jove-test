@@ -197,3 +197,5 @@ Test filename matcher try 3
 foolish test
 ..
 foolish test recommendation
+..
+Overall console cleanup
