@@ -1,4 +1,6 @@
 
+import {displayTree} from "./visualizer";
+
 (()=>{
     const {runRemoteTest, startTest, endTest, callRemote, testRemote} = require ("@tremho/jove-test");
 
@@ -15,8 +17,9 @@
         await testRemote(t, 'wait 1000', 'wait a second before inspecting page')
 
         const comptree = await callRemote('tree')
-        console.log('component tree', JSON.stringify(comptree, null, 2))
-        t.ok(!!comptree, 'component tree is returned')
+        const show = displayTree(comptree)
+        console.log('component tree', show)
+        t.ok(!!comptree, show)
 
         await endTest(t)
     }
