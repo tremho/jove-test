@@ -235,3 +235,5 @@ Mobile time spies with metadata first report
 Mobile time spies with metadata report 2
 ..
 Mobile time spies with metadata DIV 2.5
+..
+Mobile time spies with metadata sub 50
