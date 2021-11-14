@@ -243,3 +243,5 @@ Mobile tree
 Mobile tree trace
 ..
 Mobile tree trace II
+..
+Mobile tree minimalist

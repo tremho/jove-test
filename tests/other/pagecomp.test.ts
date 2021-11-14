@@ -13,7 +13,7 @@
         t.ok(true, desc)
 
         const comptree = await callRemote('tree')
-        console.log('component tree', comptree)
+        console.log('component tree', JSON.stringify(comptree, null, 2))
         t.ok(!!comptree, 'component tree is returned')
 
         await endTest(t)
