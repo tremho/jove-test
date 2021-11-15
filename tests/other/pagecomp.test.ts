@@ -1,5 +1,6 @@
 
 import {displayTree} from "./visualizer";
+import {testRemote} from "@tremho/jove-test";
 
 (()=>{
     const {runRemoteTest, startTest, endTest, callRemote, testRemote} = require ("@tremho/jove-test");
@@ -20,6 +21,9 @@ import {displayTree} from "./visualizer";
         const show = displayTree(comptree)
         console.log('component tree\nis here:', show)
         t.ok(!!comptree, show)
+
+        await testRemote(t, 'appiumDirective hello', 'check appium')
+        await testRemote(t, 'screenshot', 'give it a shot')
 
         await endTest(t)
     }
