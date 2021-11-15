@@ -1,6 +1,5 @@
 
 import {displayTree} from "./visualizer";
-import {testRemote} from "@tremho/jove-test";
 
 (()=>{
     const {runRemoteTest, startTest, endTest, callRemote, testRemote} = require ("@tremho/jove-test");
