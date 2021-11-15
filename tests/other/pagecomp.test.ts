@@ -18,7 +18,7 @@ import {displayTree} from "./visualizer";
 
         const comptree = await callRemote('tree')
         const show = displayTree(comptree)
-        console.log('component tree', show)
+        console.log('component tree\nis here:', show)
         t.ok(!!comptree, show)
 
         await endTest(t)

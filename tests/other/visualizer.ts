@@ -29,26 +29,25 @@ export function extractTitleBar(tree:any) {
                 }
             }
         }
-        out += `Page "${title}"  <${page.bounds.width}x${page.bounds.height}> Back[${back}] Menu [${menu}] Tools[${tools}] Indicators[${indicators}\n`
+        out += `Page "${title}"  <${Math.round(page.bounds.width)}x${Math.round(page.bounds.height)}> Back[${back}] Menu [${menu}] Tools[${tools}] Indicators[${indicators}]>\n`
     }
     return out
 }
 
 export function displayContent(comp:any, level= 0) {
-    let out = ' '.repeat(level + 2)
+    let out = '|'+('\u00A0'.repeat(level + 2))
     try {
-        out += `${comp._constName} [${comp.className || ''}]} "${comp.text}" <${comp.bounds?.width}x${comp.bounds?.height}>\n`
+        out += `${comp._constName} [${comp.className || ''}]} "${comp.text}" <${Math.round(comp.bounds?.width||0)}x${Math.round(comp.bounds?.height||0)}>\n`
         for (let ch of comp.children) {
             out += displayContent(ch, level + 1)
         }
     } catch(e:any) {
-        out += e.toString()
+        out += 'ERROR: '+e.toString()
+        out += '\n'
     }
     return out
 }
 
 export function displayTree(tree:any) {
-    // console.log('display tree')
-    // return JSON.stringify(tree, null, 3)
     return extractTitleBar(tree)+displayContent(tree.content)
 }

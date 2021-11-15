@@ -257,3 +257,5 @@ Mobile Connection reuse ignore
 Mobile Connection reuse revert
 ..
 Something broke again
+..
+An Appium interop attempt
