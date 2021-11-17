@@ -30,6 +30,19 @@ function accept {
   git checkout develop
 }
 
+function useMain {
+  git checkout main
+}
+function useDevelop {
+  git checkout develop
+}
+
+function revert {
+  git checkout main
+  git branch -d develop
+  git branch develop
+}
+
 for repo in "${REPOS[@]}"
 do
   cd $repo
@@ -43,6 +56,12 @@ do
     fi
   elif [ "$cmd" = "accept" ]; then
       accept $2
+  elif [ "$cmd" = "useMain" ]; then
+      useMain
+  elif [ "$cmd" = "useDevelop" ]; then
+    useDevelop
   fi
 
 done
+
+}

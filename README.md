@@ -183,3 +183,5 @@ Reduced verbosity
 === !== =
 ..
 correct path to ios app
+..
+sanity revert test from main
