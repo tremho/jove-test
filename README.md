@@ -184,6 +184,7 @@ Reduced verbosity
 ..
 correct path to ios app
 ..
+<<<<<<< HEAD
 sanity revert test from main
 ..
 back to the future
@@ -193,3 +194,130 @@ back to the future II
 back to the future ///
 ..
 future shock
+=======
+update promise resolution behavior on doBuild and doNativescript
+..
+Bannermania
+..
+Test filename matcher
+..
+Test filename matcher try 2
+..
+Test filename matcher try 3
+..
+foolish test
+..
+foolish test recommendation
+..
+Overall console cleanup
+..
+More console log cleanup
+..
+Console log should be clean
+..
+Persistent non-update of common
+..
+Logs cleaned from mobile
+..
+Mobile time is relative
+..
+Mobile time is relative
+..
+Mobile time is relative
+..
+Mobile time is relative
+..
+Mobile time is not all that relative
+..
+Mobile time is inconsistent
+..
+Mobile time is inconsistent
+..
+Mobile time nano test
+..
+Mobile time again
+..
+Mobile time spies
+..
+Mobile time spies with metadata
+..
+Mobile time spies with metadata first report
+..
+Mobile time spies with metadata report 2
+..
+Mobile time spies with metadata DIV 2.5
+..
+Mobile time spies with metadata sub 50
+..
+Mobile tree
+..
+Mobile tree trace
+..
+Mobile tree trace II
+..
+Mobile tree minimalist
+..
+Mobile tree minimalist + sort
+..
+Mobile tree minimalist + sort + constName
+..
+Mobile Connection reuse
+..
+Mobile Connection reuse ignore
+..
+Mobile Connection reuse revert
+..
+Something broke again
+..
+An Appium interop attempt
+..
+An Appium interop attempt
+..
+An Appium interop attempt II
+..
+An Appium interop attempt III
+..
+An Appium interop attempt IV
+..
+An Appium interop attempt V
+..
+An Appium interop attempt VI
+..
+Desktop tree and time
+..
+Desktop tree and time 2
+..
+Remove previous appium interop starts
+..
+Remove previous appium interop starts 2
+..
+sanity update
+..
+sanity check
+..
+put back (?) close on end
+..
+put back (?) close on end
+..
+exit on client end
+..
+more end tweaking
+..
+more end tracing
+..
+more end foo
+..
+more end foo 2
+..
+more end debug foo 3
+..
+more end debug foo 4
+..
+more end debug foo 5
+..
+another wasted day debugging broken crap
+..
+another wasted day debugging broken crap
+..
+another wasted day debugging broken crap
+>>>>>>> b12500260bb0fe2a14596cd0b78d75cc3aede007

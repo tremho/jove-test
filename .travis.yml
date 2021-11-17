@@ -8,43 +8,37 @@ matrix:
       node_js: "16"
 
       script:
-        - npm run jove-test
+        - npm run jove-test-ci
 
       before_install:
         - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
-#        - sudo easy_install pip
-#        - sudo pip install --upgrade pip
-#        - sudo pip install six
-#
-#      install:
-#        - curl https://dl.google.com/android/repository/commandlinetools-mac-7583922_latest.zip -o ~/android-clt-mac.zip
-#        - export ANDROID_HOME=~/.android
-#        - mkdir -p $ANDROID_HOME
-#        - pwd=`pwd`
-#        - cd ~ && unzip -d $ANDROID_HOME android-clt-mac.zip
-#        - cd .android
-#        - mv cmdline-tools latest
-#        - mkdir cmdline-tools
-#        - mv latest cmdline-tools
-#        - ln -s cmdline-tools/latest tools
-#        - cd $pwd
-#        - yes | $ANDROID_HOME/tools/bin/sdkmanager "build-tools;28.0.3"
-#        - yes | $ANDROID_HOME/tools/bin/sdkmanager "platform-tools"
-#        - yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-28"
-#        - yes | $ANDROID_HOME/tools/bin/sdkmanager "emulator"
-#        - yes | $ANDROID_HOME/tools/bin/sdkmanager "extras;android;m2repository"
-#        - yes | $ANDROID_HOME/tools/bin/sdkmanager "extras;google;m2repository"
-#        - yes | $ANDROID_HOME/tools/bin/sdkmanager "sources;android-28"
-#        - yes | $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-28;google_apis;x86"
-#        - yes | $ANDROID_HOME/tools/bin/sdkmanager "extras;intel;Hardware_Accelerated_Execution_Manager"
-#        - yes "" | $ANDROID_HOME/tools/bin/avdmanager create avd -n test -k "system-images;android-28;google_apis;x86"
-#        - npm install -g typescript
-#        - echo no | npm install -g nativescript
-#        - tns usage-reporting disable
-#        - tns error-reporting disable
-#
-#      script:
-#        - node --version
-#        - ns --version
-#        - npm run ci-test
-#
+        - sudo easy_install pip
+        - sudo pip install --upgrade pip
+        - sudo pip install six
+
+      install:
+        - curl https://dl.google.com/android/repository/commandlinetools-mac-7583922_latest.zip -o ~/android-clt-mac.zip
+        - export ANDROID_HOME=~/.android
+        - mkdir -p $ANDROID_HOME
+        - pwd=`pwd`
+        - cd ~ && unzip -d $ANDROID_HOME android-clt-mac.zip
+        - cd .android
+        - mv cmdline-tools latest
+        - mkdir cmdline-tools
+        - mv latest cmdline-tools
+        - ln -s cmdline-tools/latest tools
+        - cd $pwd
+        - yes | $ANDROID_HOME/tools/bin/sdkmanager "build-tools;28.0.3"
+        - yes | $ANDROID_HOME/tools/bin/sdkmanager "platform-tools"
+        - yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-28"
+        - yes | $ANDROID_HOME/tools/bin/sdkmanager "emulator"
+        - yes | $ANDROID_HOME/tools/bin/sdkmanager "extras;android;m2repository"
+        - yes | $ANDROID_HOME/tools/bin/sdkmanager "extras;google;m2repository"
+        - yes | $ANDROID_HOME/tools/bin/sdkmanager "sources;android-28"
+        - yes | $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-28;google_apis;x86"
+        - yes | $ANDROID_HOME/tools/bin/sdkmanager "extras;intel;Hardware_Accelerated_Execution_Manager"
+        - yes "" | $ANDROID_HOME/tools/bin/avdmanager create avd -n test -k "system-images;android-28;google_apis;x86"
+        - npm install -g typescript
+        - echo no | npm install -g nativescript
+        - tns usage-reporting disable
+        - tns error-reporting disable

@@ -21,6 +21,7 @@
     "./node_modules/"
   ],
   "include": [
-    "**/*.ts"
+    "**/*.ts",
+    "tests/**/*.ts"
   ]
 } 
