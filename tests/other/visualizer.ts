@@ -4,17 +4,17 @@ export function extractTitleBar(tree:any) {
     let out = ''
     const page = tree.content
     let valid = true
-    if (valid) valid = page._constName === 'TBPage'
+    if (valid) valid = page.tagName === 'TBPage'
     if (valid) {
         let tools=0, indicators=0, title='', menu=0, back=false
         for (let ch of page.children) {
             if (ch.className === 'tool-bar-container') {
                 console.log(`tool-bar-container has ${ch.children.length} children`)
                 for (let tbc of ch.children) {
-                    if (tbc._constName === 'TBToolbar') {
+                    if (tbc.tagName === 'TBToolbar') {
                         tools = tbc.children?.length || 0
                     }
-                    if (tbc._constName === 'TBIndicators') {
+                    if (tbc.tagName === 'TBIndicators') {
                         indicators = tbc.children?.length || 0
                     }
                     if (tbc.className === 'title') {
@@ -37,7 +37,7 @@ export function extractTitleBar(tree:any) {
 export function displayContent(comp:any, level= 0) {
     let out = '|'+('\u00A0'.repeat(level + 2))
     try {
-        out += `${comp._constName} [${comp.className || ''}]} "${comp.text}" <${Math.round(comp.bounds?.width||0)}x${Math.round(comp.bounds?.height||0)}>\n`
+        out += `${comp.tagName} [${comp.className || ''}]} "${comp.text}" <${Math.round(comp.bounds?.width||0)}x${Math.round(comp.bounds?.height||0)}>\n`
         for (let ch of comp.children) {
             out += displayContent(ch, level + 1)
         }
