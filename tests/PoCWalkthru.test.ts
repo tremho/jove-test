@@ -7,10 +7,6 @@ import Tap from "tap";
     async function pocTest(t:any) {
         console.log('>>>>>>>>>>>>> poctest starting <<<<<<<<<<<<')
 
-        t.ok(true, 'Life is good')
-        t.end()
-        return
-
         await startTest(t)
 
         console.log('doing basic tests')
@@ -42,9 +38,9 @@ import Tap from "tap";
 //         await testRemote(t, 'triggerAction nextbtn', 'press next button', true)
 //         await testRemote(t, 'wait 1000', 'wait 1 second to view changed page')
 
-        // await endTest(t)
-        t.ok(true, 'Life is good')
-        t.end()
+        await endTest(t)
+        // t.ok(true, 'Life is good')
+        // t.end()
     }
 // Here is how we run a test
 
