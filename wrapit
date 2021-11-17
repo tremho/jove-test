@@ -43,6 +43,10 @@ function revert {
   git branch develop
 }
 
+function touch {
+  dt=`date`
+  echo "- touched $dt  $1" >> README.md
+
 for repo in "${REPOS[@]}"
 do
   cd $repo
@@ -56,6 +60,8 @@ do
     fi
   elif [ "$cmd" = "accept" ]; then
       accept $2
+  elif [ "$cmd" == "touch" ]; then
+    touch $2
   elif [ "$cmd" = "useMain" ]; then
       useMain
   elif [ "$cmd" = "useDevelop" ]; then
