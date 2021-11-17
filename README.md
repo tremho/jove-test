@@ -297,3 +297,5 @@ more end tracing
 more end foo
 ..
 more end foo 2
+..
+more end debug foo 3
