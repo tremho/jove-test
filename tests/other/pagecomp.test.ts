@@ -26,6 +26,6 @@ import {displayTree} from "./visualizer";
 
         await endTest(t)
     }
-    // runRemoteTest('Component Spy', pagecomp)
+    runRemoteTest('Component Spy', pagecomp)
 
 })()

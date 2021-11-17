@@ -49,7 +49,7 @@
     }
 
     console.log('running remote Jove Test')
-    // runRemoteTest('Test Wait Times', waitTest)
+    runRemoteTest('Test Wait Times', waitTest)
 
 })()
 
