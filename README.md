@@ -275,3 +275,5 @@ An Appium interop attempt VI
 Desktop tree and time
 ..
 Desktop tree and time 2
+..
+Remove previous appium interop starts
