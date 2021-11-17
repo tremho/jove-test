@@ -60,7 +60,7 @@
 // Here is how we run a test
 
     console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$ Run Remote Test ---->>>  ")
-    runRemoteTest('Proof of concept walk-thru', pocTest)
+    // runRemoteTest('Proof of concept walk-thru', pocTest)
 
 // async function delay(ms:number) {
 //     return new Promise((resolve) => { setTimeout(resolve, ms) })
