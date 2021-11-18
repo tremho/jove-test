@@ -349,3 +349,5 @@ calling tree in testops again
 tparams once again
 ..
 tree try again and exit trace
+..
+exit trace continues
