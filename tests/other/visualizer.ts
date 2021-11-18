@@ -4,7 +4,7 @@ export function extractTitleBar(tree:any) {
     let out = ''
     const page = tree.content
     let valid = true
-    if (valid) valid = page.tagName === 'TBPage'
+    if (valid) valid = page.tagName === 'TBPage' || page.tagName === 'MAIN-PAGE'
     if (valid) {
         let tools=0, indicators=0, title='', menu=0, back=false
         for (let ch of page.children) {

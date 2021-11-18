@@ -17,9 +17,9 @@ import {displayTree} from "./visualizer";
         await testRemote(t, 'wait 1000', 'wait a second before inspecting page')
 
         const comptree = await callRemote('tree')
-        // const show = displayTree(comptree)
-        const show = JSON.stringify(comptree)
-        console.log('component tree\nis here:', comptree)
+        const show = displayTree(comptree)
+        // const show = JSON.stringify(comptree)
+        console.log('component tree\nis here:', show)
         t.ok(!!comptree, show)
 
         // await testRemote(t, 'appiumDirective hello', 'check appium')

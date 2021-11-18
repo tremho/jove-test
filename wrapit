@@ -48,6 +48,7 @@ function revert {
 function touch {
   dt=`date`
   echo "- touched $dt  $1" >> README.md
+}
 
 for repo in "${REPOS[@]}"
 do
@@ -73,5 +74,3 @@ do
   fi
 
 done
-
-}
