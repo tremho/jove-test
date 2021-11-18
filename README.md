@@ -325,3 +325,5 @@ another wasted day debugging broken crap
 are we reconciled now?
 ..
 nearing wit's end
+..
+resume desktop tree work
