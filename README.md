@@ -365,3 +365,5 @@ Debug viewing report
 Debug viewing report
 ..
 html report
+..
+html report save
