@@ -363,3 +363,5 @@ Debug viewing report
 Debug viewing report
 ..
 Debug viewing report
+..
+html report
