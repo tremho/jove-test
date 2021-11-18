@@ -22,8 +22,8 @@ import {displayTree} from "./visualizer";
         console.log('component tree\nis here:', show)
         t.ok(!!comptree, show)
 
-        await testRemote(t, 'appiumDirective hello', 'check appium')
-        await testRemote(t, 'screenshot', 'give it a shot')
+        // await testRemote(t, 'appiumDirective hello', 'check appium')
+        // await testRemote(t, 'screenshot', 'give it a shot')
 
         await endTest(t)
     }
