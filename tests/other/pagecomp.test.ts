@@ -23,7 +23,7 @@ import {displayTree} from "./visualizer";
         t.ok(!!comptree, show)
 
         // await testRemote(t, 'appiumDirective hello', 'check appium')
-        await testRemote(t, 'screenshot', 'give it a shot')
+        await testRemote(t, 'screenshot myPic', 'give it a shot')
 
         await endTest(t)
     }

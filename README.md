@@ -355,3 +355,5 @@ exit trace continues
 First glimpse at Electron screenshot
 ..
 First glimpse at Electron screenshot, try 2
+..
+Try saving screenshot and viewing report
