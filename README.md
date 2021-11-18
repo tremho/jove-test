@@ -359,3 +359,5 @@ First glimpse at Electron screenshot, try 2
 Try saving screenshot and viewing report
 ..
 Debug viewing report
+..
+Debug viewing report
