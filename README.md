@@ -377,3 +377,5 @@ test report
 test report
 ..
 test report
+..
+test report trace
