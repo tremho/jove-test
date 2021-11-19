@@ -373,3 +373,5 @@ html report save
 html report save
 ..
 test report
+..
+test report
