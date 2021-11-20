@@ -2,7 +2,7 @@
 
 /* Render-process application start module */
 
-import { AppCore } from "@tremho/jove-common/typings"
+import { AppCore } from "@tremho/jove-common"
 
         
 export function appStart(appContext:AppCore) {
