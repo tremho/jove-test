@@ -1,6 +1,4 @@
 import Tap from "tap";
-import {testRemote} from "@tremho/jove-test";
-
 (function(){
     const {runRemoteTest, startTest, endTest, callRemote, testRemote} = require("@tremho/jove-test");
 
