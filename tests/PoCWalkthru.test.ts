@@ -1,4 +1,5 @@
 import Tap from "tap";
+import {testRemote} from "@tremho/jove-test";
 
 (function(){
     const {runRemoteTest, startTest, endTest, callRemote, testRemote} = require("@tremho/jove-test");
@@ -18,6 +19,8 @@ import Tap from "tap";
 
         await testRemote(t, 'fetch', 'async return test', 'Okay, here I am')
 
+        await testRemote(t, 'screenshot startPic', 'screenshot first page', '/Users/sohmert/tbd/jove-test/report/electron/current/images/startPic.png')
+
         let navInfo = await callRemote('readModelValue page.navInfo')
         t.ok(typeof navInfo === 'object', 'navInfo is an object (got '+typeof navInfo+') '+navInfo)
         t.ok(navInfo.pageId === 'main', 'Page is main (got '+navInfo.pageId+')')
@@ -35,7 +38,7 @@ import Tap from "tap";
         await testRemote(t, 'wait 1000', 'wait 1 second to view changed values')
 
         await testRemote(t, 'triggerAction nextbtn', 'press next button', true)
-        await testRemote(t, 'wait 1000', 'wait 1 second to view changed page')
+        await testRemote(t, 'screenshot nextPic', 'screenshot next page', '/Users/sohmert/tbd/jove-test/report/electron/current/images/nextPic.png')
 
         await endTest(t)
         // t.ok(true, 'Life is good')
