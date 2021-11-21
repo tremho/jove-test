@@ -1,7 +1,7 @@
 
-import Tap from 'tap'
-
-import {props, hello} from './aModule'
+// import Tap from 'tap'
+//
+// import {props, hello} from './aModule'
 
 import * as JT from '@tremho/jove-test'
 
@@ -19,9 +19,9 @@ async function pocTest(t: any) {
 
     await JT.testRemote(t, 'fetch', 'async return test', 'Okay, here I am')
 
-    await JT.screenshot('startPic')
+    // await JT.screenshot('startPic')
 
-    let navInfo = await JT.callRemote('readModelValue page.navInfo')
+    let navInfo:any = await JT.callRemote('readModelValue page.navInfo')
     t.ok(typeof navInfo === 'object', 'navInfo is an object (got ' + typeof navInfo + ') ' + navInfo)
     t.ok(navInfo.pageId === 'main', 'Page is main (got ' + navInfo.pageId + ')')
     t.ok(navInfo.timestamp > 0 && navInfo.timestamp < Date.now(), 'Timestamp is valid (got ' + navInfo.timestamp + ')')
@@ -49,5 +49,4 @@ async function pocTest(t: any) {
 
 // Here is how we run a test
 
-console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$ Run Remote Test ---->>>  ")
-JT.runRemoteTest('Another Proof of concept walk-thru', pocTest)
+JT.runRemoteTest('X1 Proof of concept walk-thru', pocTest)
