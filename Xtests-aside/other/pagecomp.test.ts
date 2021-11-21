@@ -22,9 +22,6 @@ import {displayTree} from "./visualizer";
         console.log('component tree\nis here:', show)
         t.ok(!!comptree, show)
 
-        // await testRemote(t, 'appiumDirective hello', 'check appium')
-        await testRemote(t, 'screenshot myPic', 'give it a shot', '/Users/sohmert/tbd/jove-test/report/electron/current/images/myPic.png')
-
         await endTest(t)
     }
     runRemoteTest('Component Spy', pagecomp)

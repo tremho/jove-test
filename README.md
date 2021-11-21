@@ -419,3 +419,5 @@ test report trace saturday
 test report trace saturday
 ..
 test report trace saturday
+..
+test module recognition

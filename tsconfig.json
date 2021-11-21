@@ -18,7 +18,8 @@
     "forceConsistentCasingInFileNames": true 
   },
   "exclude": [
-    "./node_modules/"
+    "./node_modules/",
+    "./Xtests-aside/"
   ],
   "include": [
     "**/*.ts",
