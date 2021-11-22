@@ -1,5 +1,5 @@
 
-import {runRemoteTest} from "@tremho/jove-test";
+import Tap from 'tap'
 import {props, hello} from './aModule'
 
 function test(t:any) {
@@ -11,4 +11,6 @@ function test(t:any) {
 
     t.end()
 }
-runRemoteTest('c Test', test)
+Tap.test('c test', (t:any)=> {
+    test(t)
+})
