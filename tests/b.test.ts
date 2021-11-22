@@ -1,9 +1,8 @@
 
-import Tap from 'tap'
-
+import {runRemoteTest} from "@tremho/jove-test";
 import {props, hello} from './aModule'
 
-Tap.test('b Test', t => {
+function test(t:any) {
     t.ok(props.foo === 'FOO', "FOO")
     t.ok(props.bar === 'BAR', "BAR")
     t.ok(props.baz === 'FUBAR', "BAZ")
@@ -11,5 +10,5 @@ Tap.test('b Test', t => {
     t.ok(s === 'Hello Tap', s)
 
     t.end()
-})
-
+}
+runRemoteTest('b Test', test)
