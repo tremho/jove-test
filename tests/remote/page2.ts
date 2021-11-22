@@ -1,13 +1,8 @@
 
 import {
-    runRemoteTest,
-    startTest,
     testRemote,
-    callRemote,
-    screenshot,
-    endTest
+    screenshot
 } from '@tremho/jove-test'
-import * as JT from "@tremho/jove-test";
 
 export async function page2(t: any) {
 
