@@ -49,3 +49,5 @@ async function pocTest(t: any) {
 // Here is how we run a test
 
 JT.runRemoteTest('X1 Proof of concept walk-thru', pocTest)
+
+JT.executeQueue()
