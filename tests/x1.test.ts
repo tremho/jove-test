@@ -42,9 +42,8 @@ async function pocTest(t: any) {
     await JT.testRemote(t, 'wait 1000', 'wait 1 second to view next page',undefined)
     // await JT.screenshot('nextPic')
 
+    console.log('test script calling endTest')
     await JT.endTest(t)
-    // t.ok(true, 'Life is good')
-    // t.end()
 }
 
 // Here is how we run a test
