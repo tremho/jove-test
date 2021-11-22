@@ -7,6 +7,7 @@ import {
     // screenshot,
     endTest
 } from '@tremho/jove-test'
+import * as JT from "@tremho/jove-test";
 
 async function pocTest(t: any) {
     console.log('>>>>>>>>>>>>> poctest starting <<<<<<<<<<<<')
