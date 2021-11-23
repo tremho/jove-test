@@ -2,7 +2,8 @@
 import {
     testRemote,
     callRemote,
-    screenshot
+    screenshot,
+    compare
 } from '@tremho/jove-test'
 
 export async function page1(t: any) {
@@ -12,7 +13,8 @@ export async function page1(t: any) {
     t.ok(navInfo.timestamp > 0 && navInfo.timestamp < Date.now(), 'Timestamp is valid (got ' + navInfo.timestamp + ')')
     let firstTimestamp = navInfo.timestamp
 
-    await screenshot('main page')
+    await screenshot('main')
+    await compare('main')
 
     await testRemote(t, 'assignComponent hiLabel simple-label', 'assign hiLabel', true)
     await testRemote(t, 'assignComponent changer simple-button action changeValues', 'assign changer', true)
