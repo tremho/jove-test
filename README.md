@@ -585,3 +585,5 @@ there can be only one
 image compare
 ..
 image compare
+..
+image compare
