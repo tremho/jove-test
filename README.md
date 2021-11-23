@@ -653,3 +653,5 @@ image compare mobile
 image compare mobile
 ..
 image compare mobile
+..
+image compare mobile
