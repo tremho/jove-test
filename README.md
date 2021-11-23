@@ -627,3 +627,5 @@ image compare report
 image compare mobile
 ..
 image compare mobile
+..
+image compare mobile
