@@ -601,3 +601,5 @@ image compare
 image compare
 ..
 image compare report
+..
+image compare report
