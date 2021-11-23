@@ -603,3 +603,5 @@ image compare
 image compare report
 ..
 image compare report
+..
+image compare report
