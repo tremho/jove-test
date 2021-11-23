@@ -14,7 +14,8 @@ export async function page1(t: any) {
     let firstTimestamp = navInfo.timestamp
 
     await screenshot('main')
-    await compare('main')
+    let compResp = await compare('main')
+    console.log('compare response', compResp)
 
     await testRemote(t, 'assignComponent hiLabel simple-label', 'assign hiLabel', true)
     await testRemote(t, 'assignComponent changer simple-button action changeValues', 'assign changer', true)
