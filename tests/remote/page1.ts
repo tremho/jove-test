@@ -3,10 +3,12 @@ import {
     testRemote,
     callRemote,
     screenshot,
-    compare
+    compare,
+    remoteTitle
 } from '@tremho/jove-test'
 
 export async function page1(t: any) {
+    await remoteTitle(t, 'page 1')
     let navInfo:any = await callRemote('readModelValue page.navInfo')
     t.ok(typeof navInfo === 'object', 'navInfo is an object (got ' + typeof navInfo + ') ' + navInfo)
     t.ok(navInfo.pageId === 'main', 'Page is main (got ' + navInfo.pageId + ')')

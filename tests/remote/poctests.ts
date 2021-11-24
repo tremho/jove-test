@@ -1,10 +1,9 @@
 
-import {testRemote} from '@tremho/jove-test'
+import {testRemote, remoteTitle} from '@tremho/jove-test'
 
 export async function pocTest(t: any) {
-    console.log('>>>>>>>>>>>>> poctest starting <<<<<<<<<<<<')
-
-    console.log('doing basic tests')
+    await remoteTitle(t, 'PoC Tests')
+    
     await testRemote(t, 'add 2 3', 'addition test --- ', 5)
     await testRemote(t, 'subtract 102 60', 'subtraction test', 42)
     await testRemote(t, 'multiply 7 6', 'multiplication test', 42)
