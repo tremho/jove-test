@@ -12,7 +12,7 @@ export function pageStart(app:AppCore) {
 export function changeValues(ev:EventData) {
     const app = ev.app
     app.model.setAtPath('greeting.hello', 'Howdy', true)
-    app.setPageData('main', 'foobar', 'Foobarific!')
+    // app.setPageData('main', 'foobar', 'Foobarific!')
 }
 
 export function nextPage(ev:EventData) {

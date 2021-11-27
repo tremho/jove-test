@@ -4,11 +4,18 @@ title='My Test App'
 no-back
 
 #content
-    <simple-label text="@greeting.hello"/>        
-    <simple-label text="I wish to say @greeting.hello to you"/>        
-    <simple-label bind="greeting.hello as text"/>        
-    <simple-label text="this is @:foobar"/>
-    <simple-label text="Hello, World!"/>
+    <simple-label text="@greeting.hello"/>
 
     <simple-button text="Change Values" action="changeValues"/>
-    <simple-button text="Next Page" action="nextPage"/>
+
+<!--    >> For-Each @:planet-->
+<!--        <labeled-value label="$item.name" value="$item.distance"/>-->
+<!--    <<-->
+    <labeled-value label="Mercury" value="@:mercury million kilometers"/>
+    <labeled-value label="Venus" value="@:venus million kilometers"/>
+    <labeled-value label="Earth" value="@:earth million kilometers"/>
+    <labeled-value label="Mars" value="@:mars million kilometers"/>
+    <labeled-value label="Jupiter" value="@:jupiter million kilometers"/>
+    <labeled-value label="Saturn" value="@:saturn million kilometers"/>
+    <labeled-value label="Uranus" value="@:uranus million kilometers"/>
+    <labeled-value label="Neptune" value="@:neptune million kilometers"/>
