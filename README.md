@@ -781,3 +781,5 @@ image compare mobile
 image compare mobile
 ..
 labeled value
+..
+labeled value
