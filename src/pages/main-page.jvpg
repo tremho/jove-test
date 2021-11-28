@@ -8,6 +8,6 @@ no-back
 
     <simple-button text="Change Values" action="changeValues"/>
 
-    <repeat-ForEach subject="@:planet">
+    <repeat-for-each subject="@:planet">
         <labeled-value label="$item.name" value="$item.distance"/>
-    </repeat-ForEach>
+    </repeat-for-each>
