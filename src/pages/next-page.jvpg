@@ -1,6 +1,6 @@
 
 #page next
-title='My Test App'
+title=The Next Page
 
 #content
-<simple-label text="@greeting.hello"/>
+<simple-label text="@greeting.next"/>
