@@ -9,5 +9,5 @@ no-back
     <simple-button text="Change Values" action="changeValues"/>
 
     <repeat-for-each subject="@:planet">
-        <labeled-value label="$item.name" value="$item.distance"/>
+        <labeled-value label="$item.name" value="$item.distance million kilometers"/>
     </repeat-for-each>
