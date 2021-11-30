@@ -18,6 +18,9 @@ DEFINE MENU "main"
     @w#APP_QUIT:quit, Exit            // windows says "Exit" to quit instead of "Quit"
 
 #EDIT:editMenu!Edit
-    @D#EDIT_CUT:cut,Cut
-    @D#EDIT_COPY:copy,Copy
-    @D#EDIT_PASTE:paste,Paste
+    #EDIT_CUT:cut,Cut
+    #EDIT_COPY:copy,Copy
+    #EDIT_PASTE:paste,Paste
+
+@Dw#HELP!Help                           // only on Windows menu bar for now
+    @wAPP_ABOUT, About Jove test         // put About here for Windows
