@@ -2,9 +2,7 @@
 DEFINE MENU "main"
 
 @Dm#APP!Jove test         // App menu - name of app (mac only)
-    @Dm#APP_ABOUT,About Jove test
-    @Dm#ABOUT_JOVE,About Jove Framework
-    @Dm#APP_CHECKUPDATE,Check for Update
+    @Dm#APP_ABOUT,About Jove test               // About info customarily here for mac
     @Dm#--                                      // special notation for separator
     @Dm#APP_SERVICES:services,Services          // customary on Mac
     @Dm#--                                      // special notation for separator
@@ -12,23 +10,14 @@ DEFINE MENU "main"
     @Dm#APP_HIDEOTHERS:hideothers,Hide Others   // customary on Mac
     @Dm#APP_UNHIDE:unhide,Show All              // customary on Mac
     @Dm#--                                      // special notation for separator
-    @Dm#APP_QUIT:quit,Quit                      // customary on Mac
+    @Dm#APP_QUIT:quit,Quit                      // Quit is customarily here on Mac
 
-#FILE!File                 // file menu (desktop)
-    #FILE_NEW,New...
-    #FILE_OPEN,Open...
-    @m#FILE_CLOSE:close, Close       // on mac, close the current app window, don't quit app
+#FILE!File
+    @m#FILE_CLOSE:close, Close       // on mac, close the current app window, but don't quit app
     @uai#APP_QUIT:quit, Quit         // all others, close and quit
-    @w#APP_QUIT:quit, Exit            // windows says "Exit" to quit
+    @w#APP_QUIT:quit, Exit            // windows says "Exit" to quit instead of "Quit"
 
-#EDIT!Edit                 // edit menu
-
-
-    @m#EDIT_PASTEMATCH:pasteAndMatchStyle,Paste and Match Style
-    @m>>SPEECH!Speech                               // Customary on mac only
-        @m#SPEECH_STARTSPEECH:startSpeaking,Start Speaking
-        @m#SPEECH_STOPSPEECH:stopSpeaking,Stop Speaking
-    @m<<
-    #EDIT_DELETE:delete,Delete
-    #EDIT_SELECTALL:selectall,Select All
-
+#EDIT:editMenu!Edit
+    @D#EDIT_CUT:cut,Cut
+    @D#EDIT_COPY:copy,Copy
+    @D#EDIT_PASTE:paste,Paste
