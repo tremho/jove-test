@@ -23,4 +23,4 @@ DEFINE MENU "main"
     #EDIT_PASTE:paste,Paste
 
 @Dw#HELP!Help                           // only on Windows menu bar for now
-    @wAPP_ABOUT, About Jove test         // put About here for Windows
+    @w#APP_ABOUT, About Jove test         // put About here for Windows
