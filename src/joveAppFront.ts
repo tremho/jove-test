@@ -24,15 +24,5 @@ export function appStart(appContext:AppCore) {
             {name:'Neptune', diameter: 49528, distance: 4495.1, orbit: 59800, moons: 14}
         ])
 
-    // appContext.setPageData('main', {
-    //     mercury: 57.9,
-    //     venus: 108.2,
-    //     earth: 149.6,
-    //     mars: 227.9,
-    //     jupiter: 778.6,
-    //     saturn: 1433.5,
-    //     uranus: 2872.5,
-    //     neptune: 4495.1
-    // })
-
+    return appContext.setupMenu('menuDef.txt')
 }
