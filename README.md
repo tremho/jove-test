@@ -917,3 +917,5 @@ Now using tgz template in cli for NS
 Now using tgz template in cli for NS
 ..
 Add run command to export
+..
+xp script tweaks
