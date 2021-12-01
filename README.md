@@ -929,3 +929,5 @@ xp script tweaks
 fix old syntax mistake
 ..
 log for linux db
+..
+case fix for linux
