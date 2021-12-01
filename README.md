@@ -935,3 +935,5 @@ case fix for linux
 single menu revision
 ..
 setMaxListeners to avoid bogus leak warning
+..
+track down true source of max listeners warning
