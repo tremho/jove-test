@@ -1,6 +1,6 @@
 
 #page main
-menu-id = "mobile"
+app-menu
 title='My Test App'
 no-back
 
