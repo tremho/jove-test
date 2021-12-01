@@ -17,12 +17,15 @@ DEFINE MENU "main"
     @uai#APP_QUIT:quit, Quit         // all others, close and quit
     @w#APP_QUIT:quit, Exit            // windows says "Exit" to quit instead of "Quit"
 
-#EDIT:editMenu!Edit
+@D#EDIT:edit!Edit
+    #EDIT_UNDO:undo, Undo
+    #EDIT_REDO:redo, Redo
     #EDIT_CUT:cut,Cut
     #EDIT_COPY:copy,Copy
     #EDIT_PASTE:paste,Paste
+    #EDIT_DELETE:delete, Delete
 
-@D#VIEW!View
+@D#VIEW:view!View
     #VIEW_RELOAD:reload,Reload
     #VIEW_FORCERELOAD:forceReload,Force Reload
     #VIEW_TOGGLEDEVTOOLS:toggleDevTools,Toggle developer tools
@@ -33,6 +36,6 @@ DEFINE MENU "main"
 
 @D#WINDOW:windowMenu!Window
 
-@Dw#HELP!Help                           // only on Windows menu bar for now
+@w#HELP:help!Help                         // only on Windows menu bar for now
     @w#APP_ABOUT, About Jove test         // put About here for Windows
 
