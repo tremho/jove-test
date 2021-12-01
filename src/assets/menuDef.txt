@@ -1,7 +1,7 @@
 
 DEFINE MENU "main"
 
-@Dm#APP!Jove test         // App menu - name of app (mac only)
+@Dm#APP!Jove test         // Mac Application menu - name of app (mac only)
     @Dm#APP_ABOUT,About Jove test               // About info customarily here for mac
     @Dm#--                                      // special notation for separator
     @Dm#APP_SERVICES:services,Services          // customary on Mac
@@ -12,7 +12,7 @@ DEFINE MENU "main"
     @Dm#--                                      // special notation for separator
     @Dm#APP_QUIT:quit,Quit                      // Quit is customarily here on Mac
 
-#FILE!File
+#FILE!File                           // all targets get a File menu, including in app-menu
     @m#FILE_CLOSE:close, Close       // on mac, close the current app window, but don't quit app
     @uai#APP_QUIT:quit, Quit         // all others, close and quit
     @w#APP_QUIT:quit, Exit            // windows says "Exit" to quit instead of "Quit"
@@ -34,8 +34,8 @@ DEFINE MENU "main"
     #VIEW_ZOOMIN:zoomIn,Zoom in
     #VIEW_ZOOMOut:zoomOut,Zoom out
 
-@D#WINDOW:windowMenu!Window
+@Dm#WINDOW:windowMenu!Window              // only on Mac
 
-@w#HELP:help!Help                         // only on Windows menu bar for now
-    @w#APP_ABOUT, About Jove test         // put About here for Windows
+@wu#HELP:help!Help                        // only on Windows and Linux menu bar for now
+    @wu#APP_ABOUT, About Jove test         // put About here for Windows and Linux
 
