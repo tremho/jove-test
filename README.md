@@ -939,3 +939,5 @@ setMaxListeners to avoid bogus leak warning
 track down true source of max listeners warning
 ..
 track down true source of max listeners warning
+..
+new attempt for max listeners bug
