@@ -929,3 +929,25 @@ xp script tweaks
 fix old syntax mistake
 ..
 log for linux db
+..
+case fix for linux
+..
+single menu revision
+..
+setMaxListeners to avoid bogus leak warning
+..
+track down true source of max listeners warning
+..
+track down true source of max listeners warning
+..
+new attempt for max listeners bug
+..
+no luck with max listeners bug
+..
+new ideas with max listeners bug
+..
+blah with max listeners bug
+..
+another long shot with max listeners bug
+..
+giving up on max listeners bug
