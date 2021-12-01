@@ -943,3 +943,5 @@ track down true source of max listeners warning
 new attempt for max listeners bug
 ..
 no luck with max listeners bug
+..
+new ideas with max listeners bug
