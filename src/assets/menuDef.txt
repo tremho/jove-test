@@ -24,3 +24,14 @@ DEFINE MENU "main"
 
 @Dw#HELP!Help                           // only on Windows menu bar for now
     @w#APP_ABOUT, About Jove test         // put About here for Windows
+
+
+DEFINE MENU "mobile"
+
+#EDIT:editMenu!Edit
+    #EDIT_CUT:cut,Cut
+    #EDIT_COPY:copy,Copy
+    #EDIT_PASTE:paste,Paste
+
+#HELP!Help
+    #APP_ABOUT, About Jove test

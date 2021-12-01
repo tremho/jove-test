@@ -927,3 +927,5 @@ xp script tweaks
 xp script tweaks
 ..
 fix old syntax mistake
+..
+log for linux db

@@ -1,5 +1,6 @@
 
 #page main
+menu-id = "mobile"
 title='My Test App'
 no-back
 
