@@ -933,3 +933,5 @@ log for linux db
 case fix for linux
 ..
 single menu revision
+..
+setMaxListeners to avoid bogus leak warning
