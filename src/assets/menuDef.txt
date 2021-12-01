@@ -22,16 +22,17 @@ DEFINE MENU "main"
     #EDIT_COPY:copy,Copy
     #EDIT_PASTE:paste,Paste
 
+@D#VIEW!View
+    #VIEW_RELOAD:reload,Reload
+    #VIEW_FORCERELOAD:forceReload,Force Reload
+    #VIEW_TOGGLEDEVTOOLS:toggleDevTools,Toggle developer tools
+    #VIEW_TOGGLEFULLSCREEN:togglefullscreen,Toggle full screen
+    #VIEW_RESETZOOM:resetZoom,Actual Size
+    #VIEW_ZOOMIN:zoomIn,Zoom in
+    #VIEW_ZOOMOut:zoomOut,Zoom out
+
+@D#WINDOW:windowMenu!Window
+
 @Dw#HELP!Help                           // only on Windows menu bar for now
     @w#APP_ABOUT, About Jove test         // put About here for Windows
 
-
-DEFINE MENU "mobile"
-
-#EDIT:editMenu!Edit
-    #EDIT_CUT:cut,Cut
-    #EDIT_COPY:copy,Copy
-    #EDIT_PASTE:paste,Paste
-
-#HELP!Help
-    #APP_ABOUT, About Jove test
