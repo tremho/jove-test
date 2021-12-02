@@ -1,5 +1,5 @@
 
-DEFINE MENU "main"
+DEFINE MENU
 
 @Dm#APP!Jove test         // Mac Application menu - name of app (mac only)
     @Dm#APP_ABOUT,About Jove test               // About info customarily here for mac
