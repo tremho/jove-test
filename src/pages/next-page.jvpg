@@ -4,3 +4,14 @@ title=The Next Page
 
 #content
 <simple-label text="@greeting.next"/>
+
+
+<repeat-for-each subject="@planet.data"
+                 fact="@planet.fact"
+                 unit="@planet.unit">
+    <stack-layout orientation="horizontal">
+        <simple-label text="$item.name"/>
+        <fill-space width="20px"/>
+        <simple-label text="$item.%fact $%unit"/>
+    </stack-layout>
+</repeat-for-each>
