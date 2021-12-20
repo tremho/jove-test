@@ -3,6 +3,7 @@
 import {pocTest} from "./remote/poctests";
 import {page1} from "./remote/page1";
 import {page2} from "./remote/page2"
+import {repeatCheck} from "./remote/repeatCheck"
 
 import {runRemoteTest, endTest} from '@tremho/jove-test'
 
@@ -10,6 +11,7 @@ async function allTest(t: any) {
     await pocTest(t)
     await page1(t)
     await page2(t)
+    await repeatCheck(t)
     await endTest(t)
 }
 

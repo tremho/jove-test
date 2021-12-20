@@ -997,3 +997,5 @@ repo madness may be over
 repo madness is  over
 ..
 synching in jove-test to catch up
+..
+> trace tree el.attribute
