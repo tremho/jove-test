@@ -17,7 +17,10 @@ export async function repeatCheck(t: any) {
 
     await testRemote(t, 'assignComponent rptfor repeat-for-each', 'identify rptfor', true)
     const rfv = await callRemote(' tree rptfor')
+    console.log('--------------------------------------------')
     console.log('repeat-for tree', rfv)
+    console.log('--------------------------------------------')
+
 
 
 }
