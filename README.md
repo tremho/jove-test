@@ -999,3 +999,5 @@ repo madness is  over
 synching in jove-test to catch up
 ..
 > trace tree el.attribute
+..
+> trace tree el.attribute
