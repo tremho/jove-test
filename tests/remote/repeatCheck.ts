@@ -21,6 +21,6 @@ export async function repeatCheck(t: any) {
     console.log('repeat-for tree', rfv)
     console.log('--------------------------------------------')
 
-    await testRemote(t, 'goToPage main-page', 'return to main', true)
+    // await testRemote(t, 'goToPage main-page', 'return to main', true)
 
 }
