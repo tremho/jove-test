@@ -1077,3 +1077,5 @@ bring up to date
 > image compare tracing
 ..
 > image compare tracing +
+..
+> image compare tracing +
