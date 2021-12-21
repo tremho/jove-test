@@ -1075,3 +1075,5 @@ bring up to date
 > more test start tracing
 ..
 > image compare tracing
+..
+> image compare tracing +
