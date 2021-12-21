@@ -1043,3 +1043,5 @@ named tree
 named tree
 ..
 named tree
+..
+console cleaning for test
