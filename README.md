@@ -1065,3 +1065,5 @@ isolate rfe props
 isolate rfe props
 ..
 bring up to date
+..
+> test launch trace
