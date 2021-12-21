@@ -1047,3 +1047,5 @@ named tree
 console cleaning for test
 ..
 console cleaning for test
+..
+isolate rfe props

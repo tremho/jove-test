@@ -10,8 +10,8 @@ title=The Next Page
                  fact="@planet.fact"
                  unit="@planet.unit">
     <stack-layout orientation="horizontal">
-        <simple-label text="$item.name"/>
+        <simple-label color="green" text="$item.name"/>
         <fill-space width="20px"/>
-        <simple-label text="$item.%fact $%unit"/>
+        <simple-label color="darkblue" text="$item.%fact $%unit"/>
     </stack-layout>
 </repeat-for-each>
