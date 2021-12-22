@@ -2,6 +2,7 @@
 import {
     testRemote,
     screenshot,
+    compare,
     remoteTitle,
     callRemote
 } from '@tremho/jove-test'
@@ -10,7 +11,7 @@ export async function repeatCheck(t: any) {
 
     await remoteTitle(t, 'repeat check')
 
-    // await callRemote('goToPage next-page')
+    await callRemote('goToPage next-page')
 
     // const tv = await callRemote('tree')
     // console.log('tree-view', tv)
@@ -21,7 +22,8 @@ export async function repeatCheck(t: any) {
     // console.log('repeat-for tree', rfv)
     // console.log('--------------------------------------------')
 
-    t.ok(true, 'sanity')
+    await screenshot(t,'nextPic')
+    await compare(t, 'nextPic')
 
     try {
         let planets = rfv.content.children[0].children
