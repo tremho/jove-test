@@ -16,6 +16,9 @@ title=The Next Page
     </stack-layout>
 </repeat-for-each>
 
-<repeat-for-each subject="@test.nested" condition="false">
+<repeat-for-each subject="@test.nested" condition="$testCond()">
     <labeled-value label="$item.label" value="$item.value"/>
 </repeat-for-each>
+
+
+$testCond() { return true }
