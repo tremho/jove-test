@@ -1115,3 +1115,5 @@ add condition to repeat-for-each
 add condition to repeat-for-each
 ..
 add condition to repeat-for-each
+..
+move activity setting in navigateToPage

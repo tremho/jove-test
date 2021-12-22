@@ -20,5 +20,3 @@ title=The Next Page
     <labeled-value label="$item.label" value="$item.value"/>
 </repeat-for-each>
 
-
-$testCond(item) { console.log(item); return item.label.length > 3 }
