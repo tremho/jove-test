@@ -1089,3 +1089,5 @@ passing t on screenshot
 removing console traces for test
 ..
 formatted JSON for tree report + cleanup on test abort
+..
+cleanup on test abort
