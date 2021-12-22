@@ -1085,3 +1085,5 @@ bring up to date
 > image compare tracing +
 ..
 passing t on screenshot
+..
+removing console traces for test

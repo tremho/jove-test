@@ -23,7 +23,7 @@ export async function repeatCheck(t: any) {
     // console.log('--------------------------------------------')
 
     await screenshot(t,'nextPic')
-    await compare(t, 'nextPic')
+    // await compare(t, 'nextPic')
 
     try {
         let planets = rfv.content.children[0].children
@@ -40,6 +40,10 @@ export async function repeatCheck(t: any) {
     } catch(e:any) {
         t.ok(false, e.message)
     }
+
+    await compare(t, 'main')
+    await compare(t, 'changePic')
+    await compare(t, 'nextPic')
 
     // await testRemote(t, 'goToPage main-page', 'return to main', true)
 
