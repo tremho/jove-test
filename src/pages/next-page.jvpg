@@ -15,3 +15,7 @@ title=The Next Page
         <simple-label color="darkblue" text="$item.%fact $%unit"/>
     </stack-layout>
 </repeat-for-each>
+
+<repeat-for-each subject="@test.nested">
+    <labeled-value label="$item.label" value="$item.value"/>
+</repeat-for-each>

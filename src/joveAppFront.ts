@@ -19,4 +19,13 @@ export async function appStart(appContext:AppCore) {
     // add your startup code here
     await loadPlanets(appContext)
     appContext.model.setAtPath('planet.filter', [], true)
+
+    appContext.model.addSection('test', {
+        nested: [
+            {label:"foo", value: "bar"},
+            {label:"ren", value: "stimpy"},
+            {label:"itchy", value: "scratchy"},
+            {label:"tom", value: "jerry"}
+        ]
+    })
 }
