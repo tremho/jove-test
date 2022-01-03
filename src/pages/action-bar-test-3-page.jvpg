@@ -1,0 +1,7 @@
+
+// Test actionbar with app-menu and toolbar-id 'main'
+#page action-bar-test-3
+title=Action-Bar Test with toolbar
+no-back
+app-menu
+toolbar-id main

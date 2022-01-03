@@ -16,7 +16,3 @@ title=The Next Page
     </stack-layout>
 </repeat-for-each>
 
-<repeat-for-each subject="@test.nested" condition="this.testCond(item)">
-    <labeled-value label="$item.label" value="$item.value"/>
-</repeat-for-each>
-

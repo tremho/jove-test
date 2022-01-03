@@ -1,0 +1,5 @@
+
+// Test actionbar showing a title only. System menu will still be displayed.
+#page action-bar-test
+title=Action-Bar Test
+no-back

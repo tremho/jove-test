@@ -1,0 +1,6 @@
+
+// Test actionbar add app-menu
+#page action-bar-test-2
+title=Action-Bar Test with menu
+no-back
+app-menu
