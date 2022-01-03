@@ -15,7 +15,7 @@ export async function actionBar(t: any) {
     t.ok(typeof navInfo === 'object', 'navInfo is an object (got ' + typeof navInfo + ') ' + navInfo)
     t.ok(navInfo.pageId === 'action-bar-test', 'Page is correct (got ' + navInfo.pageId + ')')
 
-    await askAHuman(t, '')
+    await askAHuman(t, 'Is the title showing?', 'Yes,No', 'Yes')
 
 
 }
