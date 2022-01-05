@@ -36,6 +36,11 @@ DEFINE MENU
 
 @Dm#WINDOW:windowMenu!Window              // only on Mac
 
+#CHECK!Checkboxes
+    #CHECK_ONE, Checkbox 1<checked>
+    #CHECK_TWO, Checkbox 2<unchecked>
+    #CHECK_ICON, Has Icon<icon=phase-1.png, unchecked, tooltip=There is an icon here>
+
 @wu#HELP:help!Help                        // only on Windows and Linux menu bar for now
     @wu#APP_ABOUT, About Jove test         // put About here for Windows and Linux
 

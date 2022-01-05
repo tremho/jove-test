@@ -28,4 +28,6 @@ export async function appStart(appContext:AppCore) {
             {label:"tom", value: "jerry"}
         ]
     })
+
+    return appContext.setupMenu('menuDef.txt')
 }

@@ -1193,3 +1193,5 @@ askAHuman hang trace
 askAHuman no second window
 ..
 activity pageStart forgiveness
+..
+add (back) wait function to test API
