@@ -1197,3 +1197,5 @@ activity pageStart forgiveness
 add (back) wait function to test API
 ..
 increase pre-delay for runTest
+..
+error trap in callTestRequest

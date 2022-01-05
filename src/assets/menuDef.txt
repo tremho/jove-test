@@ -44,3 +44,20 @@ DEFINE MENU
 @wu#HELP:help!Help                        // only on Windows and Linux menu bar for now
     @wu#APP_ABOUT, About Jove test         // put About here for Windows and Linux
 
+DEFINE TOOLBAR main
+#TB_A, A
+#TB_B, B
+#TB_C, C
+#TB_D, D
+
+DEFINE INDICATORS main
+#IN_A, a
+#IN_B, b
+#IN_C, c
+#IN_D, d
+
+DEFINE INDICATORS other
+#INO_A, o
+#INO_B, t
+#INO_C, h
+#INO_D, r
