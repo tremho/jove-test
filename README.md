@@ -1195,3 +1195,5 @@ askAHuman no second window
 activity pageStart forgiveness
 ..
 add (back) wait function to test API
+..
+increase pre-delay for runTest
