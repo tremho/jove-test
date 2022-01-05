@@ -14,9 +14,8 @@ export async function appStart(appContext:AppCore) {
         hello: "Hello World"
     })
 
-    await appContext.setupMenu('menuDef.txt')
-
-    // add your startup code here
+    //
+    // // add your startup code here
     await loadPlanets(appContext)
     appContext.model.setAtPath('planet.filter', [], true)
 
@@ -28,6 +27,5 @@ export async function appStart(appContext:AppCore) {
             {label:"tom", value: "jerry"}
         ]
     })
-
     return appContext.setupMenu('menuDef.txt')
 }

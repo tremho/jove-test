@@ -1205,3 +1205,5 @@ cm vs com update
 forgive NoPageComponent error
 ..
 error trap in WSCLIENT test executor
+..
+toolbar and indicator ids

@@ -18,8 +18,7 @@ export async function actionBar(t: any) {
     t.ok(typeof navInfo === 'object', 'navInfo is an object (got ' + typeof navInfo + ') ' + navInfo)
     t.ok(navInfo.pageId === 'action-bar-test', 'Page is correct (got ' + navInfo.pageId + ')')
 
-    await askAHuman(t, 'inspect screen, and check system menu for checkbox items and tooltip', 'Okay', 'Okay')
-    await wait(5000)
+    await wait(10000)
     await askAHuman(t, 'Is the title showing?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Is the system menu working?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Is there an icon for check item #3?', 'Yes,No', 'Yes')
@@ -32,15 +31,13 @@ export async function actionBar(t: any) {
     t.ok(typeof navInfo === 'object', 'navInfo is an object (got ' + typeof navInfo + ') ' + navInfo)
     t.ok(navInfo.pageId === 'action-bar-test-2', 'Page is correct (got ' + navInfo.pageId + ')')
 
-    await askAHuman(t, 'inspect screen, and check app menu operation and sync', 'Okay', 'Okay')
-    await wait(5000)
+    await wait(10000)
     await askAHuman(t, 'Is the title showing?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Is the app-menu showing and working?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Are toolbar or indicator showing?', 'Yes,No', 'No')
 
     // toolbar 3
-    await askAHuman(t, 'inspect screen, and check toolbar appearance', 'Okay', 'Okay')
-    await wait(5000)
+    await wait(10000)
     await testRemote(t, 'goToPage action-bar-test-3', 'go to action-bar-test 3 page')
     navInfo = await callRemote('readModelValue page.navInfo')
     t.ok(typeof navInfo === 'object', 'navInfo is an object (got ' + typeof navInfo + ') ' + navInfo)
@@ -53,8 +50,7 @@ export async function actionBar(t: any) {
     await askAHuman(t, 'Is indicator showing?', 'Yes,No', 'No')
 
     // indicator 4
-    await askAHuman(t, 'inspect screen, and check indicator appearance', 'Okay', 'Okay')
-    await wait(5000)
+    await wait(10000)
     await testRemote(t, 'goToPage action-bar-test-4', 'go to action-bar-test 4 page')
     navInfo = await callRemote('readModelValue page.navInfo')
     t.ok(typeof navInfo === 'object', 'navInfo is an object (got ' + typeof navInfo + ') ' + navInfo)
@@ -66,7 +62,6 @@ export async function actionBar(t: any) {
     await askAHuman(t, 'Is toolbar showing?', 'Yes,No', 'No')
 
     // other toolbar 5
-    await askAHuman(t, 'inspect screen, and check toolbar (other) appearance', 'Okay', 'Okay')
     await wait(5000)
     await testRemote(t, 'goToPage action-bar-test-5', 'go to action-bar-test 5 page')
     navInfo = await callRemote('readModelValue page.navInfo')

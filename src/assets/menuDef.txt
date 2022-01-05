@@ -34,30 +34,25 @@ DEFINE MENU
     #VIEW_ZOOMIN:zoomIn,Zoom in
     #VIEW_ZOOMOut:zoomOut,Zoom out
 
-@Dm#WINDOW:windowMenu!Window              // only on Mac
-
 #CHECK!Checkboxes
     #CHECK_ONE, Checkbox 1<checked>
     #CHECK_TWO, Checkbox 2<unchecked>
     #CHECK_ICON, Has Icon<icon=phase-1.png, unchecked, tooltip=There is an icon here>
 
+@Dm#WINDOW:windowMenu!Window              // only on Mac
+
 @wu#HELP:help!Help                        // only on Windows and Linux menu bar for now
     @wu#APP_ABOUT, About Jove test         // put About here for Windows and Linux
 
-DEFINE TOOLBAR main
+DEFINE TOOLBAR "main"
 #TB_A, A
 #TB_B, B
 #TB_C, C
 #TB_D, D
 
-DEFINE INDICATORS main
-#IN_A, a
-#IN_B, b
-#IN_C, c
-#IN_D, d
+DEFINE INDICATORS "main"
+#IN1, A<state=on, icon:on=active.png, icon:off=disabled.png>
+#IN2, B<state=default, icon=whatever.jpg>
+#IN3, C<type=Example,tooltip=Cooliomente,state=on,icon:on=active.png, icon:off=disabled.png>
+#IN4, D<state=off,icon:foobar=foobar.png>
 
-DEFINE INDICATORS other
-#INO_A, o
-#INO_B, t
-#INO_C, h
-#INO_D, r
