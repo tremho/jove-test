@@ -1201,3 +1201,5 @@ increase pre-delay for runTest
 error trap in callTestRequest
 ..
 cm vs com update
+..
+forgive NoPageComponent error
