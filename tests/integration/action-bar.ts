@@ -20,9 +20,9 @@ export async function actionBar(t: any) {
     console.log('question 1')
     await askAHuman(t, 'Is the title showing?', 'Yes,No', 'Yes')
     console.log('question 2')
-    // await askAHuman(t, 'Is the system menu working?', 'Yes,No', 'Yes')
-    // console.log('question 3')
-    // await askAHuman(t, 'Are toolbar, indicator, or menu showing?', 'Yes,No', 'No')
+    await askAHuman(t, 'Is the system menu working?', 'Yes,No', 'Yes')
+    console.log('question 3')
+    await askAHuman(t, 'Are toolbar, indicator, or menu showing?', 'Yes,No', 'No')
     //
     // // menu 2
     await testRemote(t, 'goToPage action-bar-test-2', 'go to action-bar-test 2 page')

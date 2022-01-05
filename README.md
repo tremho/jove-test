@@ -1189,3 +1189,5 @@ askAHHuman cleanup
 askAHHuman cleanup
 ..
 askAHuman hang trace
+..
+askAHuman no second window
