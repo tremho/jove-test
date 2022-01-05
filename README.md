@@ -1203,3 +1203,5 @@ error trap in callTestRequest
 cm vs com update
 ..
 forgive NoPageComponent error
+..
+error trap in WSCLIENT test executor
