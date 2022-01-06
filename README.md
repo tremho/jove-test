@@ -1209,3 +1209,5 @@ error trap in WSCLIENT test executor
 toolbar and indicator ids
 ..
 tool and indicator id trace
+..
+tool and indicator id trace
