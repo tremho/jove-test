@@ -1,7 +1,7 @@
 
 // Test actionbar with all parts, but toolbar-id 'other'
 #page action-bar-test-5
-title=Action-Bar Test with indicator
+title=Action-Bar Test with other toolbar
 no-back
 app-menu
 toolbar-id other

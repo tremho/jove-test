@@ -50,6 +50,12 @@ DEFINE TOOLBAR "main"
 #TB_C, C
 #TB_D, D
 
+DEFINE TOOLBAR "other"
+#TBO_A, 1
+#TBO_B, 2
+#TBO_C, 3
+#TBO_D, 4
+
 DEFINE INDICATORS "main"
 #IN1, A<state=on, icon:on=active.png, icon:off=disabled.png>
 #IN2, B<state=default, icon=whatever.jpg>
