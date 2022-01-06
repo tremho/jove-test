@@ -4,5 +4,5 @@
 title=Action-Bar Test with other toolbar
 no-back
 app-menu
-toolbar-id other
-indicator-id main
+toolbar-id "other"
+indicator-id "main"
