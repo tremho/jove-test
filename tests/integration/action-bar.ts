@@ -65,7 +65,7 @@ export async function actionBar(t: any) {
 
     await askAHuman(t, 'Displaying title and app-menu?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Is indicator showing?', 'Yes,No', 'Yes')
-    await askAHuman(t, 'Is \'other\' toolbar showing?', 'Yes,No', 'No')
+    await askAHuman(t, 'Is \'other\' toolbar showing?', 'Yes,No', 'Yes')
 
 
 }
