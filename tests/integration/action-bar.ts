@@ -22,7 +22,6 @@ export async function actionBar(t: any) {
     await askAHuman(t, 'Is the title showing?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Is the system menu working?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Is there an icon for check item #3?', 'Yes,No', 'Yes')
-    await askAHuman(t, 'Is there an tooltip for check item #3?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Are toolbar, indicator, or menu showing?', 'Yes,No', 'No')
     //
     // // menu 2
@@ -32,8 +31,7 @@ export async function actionBar(t: any) {
     t.ok(navInfo.pageId === 'action-bar-test-2', 'Page is correct (got ' + navInfo.pageId + ')')
 
     await wait(10000)
-    await askAHuman(t, 'Is the title showing?', 'Yes,No', 'Yes')
-    await askAHuman(t, 'Is the app-menu showing and working?', 'Yes,No', 'Yes')
+    await askAHuman(t, 'Displaying title and app-menu?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Are toolbar or indicator showing?', 'Yes,No', 'No')
 
     // toolbar 3
@@ -43,10 +41,8 @@ export async function actionBar(t: any) {
     t.ok(typeof navInfo === 'object', 'navInfo is an object (got ' + typeof navInfo + ') ' + navInfo)
     t.ok(navInfo.pageId === 'action-bar-test-3', 'Page is correct (got ' + navInfo.pageId + ')')
 
-    await askAHuman(t, 'Is the title showing?', 'Yes,No', 'Yes')
-    await askAHuman(t, 'Is the app-menu showing and working?', 'Yes,No', 'Yes')
-    await askAHuman(t, 'Is toolbar showing?', 'Yes,No', 'Yes')
-    await askAHuman(t, 'Is it the main toolbar?', 'Yes,No', 'Yes')
+    await askAHuman(t, 'Displaying title and app-menu?', 'Yes,No', 'Yes')
+    await askAHuman(t, 'Is \'main\' toolbar showing?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Is indicator showing?', 'Yes,No', 'No')
 
     // indicator 4
@@ -56,8 +52,7 @@ export async function actionBar(t: any) {
     t.ok(typeof navInfo === 'object', 'navInfo is an object (got ' + typeof navInfo + ') ' + navInfo)
     t.ok(navInfo.pageId === 'action-bar-test-4', 'Page is correct (got ' + navInfo.pageId + ')')
 
-    await askAHuman(t, 'Is the title showing?', 'Yes,No', 'Yes')
-    await askAHuman(t, 'Is the app-menu showing and working?', 'Yes,No', 'Yes')
+    await askAHuman(t, 'Displaying title and app-menu?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Is indicator showing?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Is toolbar showing?', 'Yes,No', 'No')
 
@@ -68,11 +63,9 @@ export async function actionBar(t: any) {
     t.ok(typeof navInfo === 'object', 'navInfo is an object (got ' + typeof navInfo + ') ' + navInfo)
     t.ok(navInfo.pageId === 'action-bar-test-5', 'Page is correct (got ' + navInfo.pageId + ')')
 
-    await askAHuman(t, 'Is the title showing?', 'Yes,No', 'Yes')
-    await askAHuman(t, 'Is the app-menu showing and working?', 'Yes,No', 'Yes')
+    await askAHuman(t, 'Displaying title and app-menu?', 'Yes,No', 'Yes')
     await askAHuman(t, 'Is indicator showing?', 'Yes,No', 'Yes')
-    await askAHuman(t, 'Is toolbar showing?', 'Yes,No', 'Yes')
-    await askAHuman(t, 'Is it the \'other\' toolbar?', 'Yes, No', 'Yes')
+    await askAHuman(t, 'Is \'other\' toolbar showing?', 'Yes,No', 'No')
 
 
 }

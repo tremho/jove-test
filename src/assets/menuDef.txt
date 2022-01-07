@@ -37,7 +37,7 @@ DEFINE MENU
 #CHECK!Checkboxes
     #CHECK_ONE, Checkbox 1<checked>
     #CHECK_TWO, Checkbox 2<unchecked>
-    #CHECK_ICON, Has Icon<icon=phase-1.png, unchecked, tooltip=There is an icon here>
+    #CHECK_ICON, Has Icon<icon=phase-1.png>
 
 @Dm#WINDOW:windowMenu!Window              // only on Mac
 

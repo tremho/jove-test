@@ -1217,3 +1217,5 @@ tool and indicator id trace
 toolbar and indicator ids
 ..
 toolbar and indicator ids
+..
+toolbar and indicator ids cleanup
