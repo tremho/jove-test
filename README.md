@@ -1223,3 +1223,5 @@ toolbar and indicator ids cleanup
 gilding the lilly: highlight selected on askAHuman
 ..
 gilding the lilly: highlight selected on askAHuman
+..
+selecting 'expect' not working, but moving on
