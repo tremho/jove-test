@@ -44,19 +44,19 @@ DEFINE MENU
 @wu#HELP:help!Help                        // only on Windows and Linux menu bar for now
     @wu#APP_ABOUT, About Jove test         // put About here for Windows and Linux
 
-DEFINE TOOLBAR "main"
+DEFINE TOOLBAR="main"
 #TB_A, A
 #TB_B, B
 #TB_C, C
 #TB_D, D
 
-DEFINE TOOLBAR "other"
+DEFINE TOOLBAR="other"
 #TBO_A, 1
 #TBO_B, 2
 #TBO_C, 3
 #TBO_D, 4
 
-DEFINE INDICATORS "main"
+DEFINE INDICATORS="main"
 #IN1, A<state=on, icon:on=active.png, icon:off=disabled.png>
 #IN2, B<state=default, icon=whatever.jpg>
 #IN3, C<type=Example,tooltip=Cooliomente,state=on,icon:on=active.png, icon:off=disabled.png>
