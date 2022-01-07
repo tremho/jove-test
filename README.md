@@ -1213,3 +1213,5 @@ tool and indicator id trace
 tool and indicator id trace
 ..
 tool and indicator id trace
+..
+toolbar and indicator ids

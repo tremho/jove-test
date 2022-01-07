@@ -4,4 +4,4 @@
 title=Action-Bar Test with toolbar
 no-back
 app-menu
-toolbar-id "main"
+toolbar-id = "main"

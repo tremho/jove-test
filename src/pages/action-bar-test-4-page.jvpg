@@ -4,5 +4,5 @@
 title=Action-Bar Test with indicator
 no-back
 app-menu
-<!--toolbar-id main-->
-indicator-id "main"
+<!--toolbar-id = main-->
+indicator-id = "main"
