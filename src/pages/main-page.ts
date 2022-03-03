@@ -5,17 +5,21 @@
 import { AppCore, EventData } from "@tremho/jove-common"
 
     
-export function pageStart(app:AppCore) {
+export function pageEnter(app:AppCore) {
     console.log('main page started')
 }
 
 export function changeValues(ev:EventData) {
     const app = ev.app
-    app.model.setAtPath('greeting.hello', 'Howdy', true)
-    // app.setPageData('main', 'foobar', 'Foobarific!')
+    if(ev.eventName === 'press') {
+        app.model.setAtPath('greeting.hello', 'Howdy', true)
+        // app.setPageData('main', 'foobar', 'Foobarific!')
+    }
 }
 
 export function nextPage(ev:EventData) {
     const app = ev.app
-    app.navigateToPage('next')
+    if(ev.eventName === 'press') {
+        app.navigateToPage('next')
+    }
 }
